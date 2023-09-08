@@ -9,8 +9,6 @@
 name: Upload Python Package
 
 on:
-  release:
-    types: [published]
     tags:
       - v*.*.*    
 
@@ -32,6 +30,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install build
+              
     - name: Build package
       run: python -m build
     - name: Publish package
@@ -39,3 +38,5 @@ jobs:
       with:
         user: __token__
         password: ${{ secrets.PYPI_GITHUB_TOKEN }}
+        distribution: dist/*
+        version: ${{ github.ref }}

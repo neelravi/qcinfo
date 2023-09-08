@@ -13,9 +13,10 @@ def main():
 
 
     print("__________________________________________________________")
-
+    print("                                                          ")
     print("             Quantum Chemistry File Insights              ")
-
+    print("               By: Ravindra Shinde (2023)                 ")
+    print("                   r.l.shinde@utwente.nl                  ")
     print("__________________________________________________________")
     print("----------------------------------------------------------")
 

@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='qcinfo',
-    version='0.1.0',
+    version='0.1.1',
     description='A Python package for getting insights from quantum chemical calculation data.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
